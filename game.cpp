@@ -386,7 +386,6 @@ void Game::containEntity(Entity& entity) {
     int containChance = player.getKnowledge() * 3 + getTotalContainmentBonus();
     if (rand() % 100 < containChance) {
         std::cout << "Hai contenuto con successo l'entità!\n";
-        player.gainExperience;
         player.gainExperience(entity.getExperienceValue() * 2);
         entitiesContained++;
         entityQueue.pop();
