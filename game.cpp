@@ -31,7 +31,10 @@ void Game::play() {
     
     std::cout << "Grazie per aver giocato!\n";
 }
-
+void Game::addContainedEntity(const Entity& entity) {
+    activeEntities.push_back(entity);
+    entitiesContained++;
+}
 void Game::playDay() {
     std::cout << "\n--- Giorno " << currentDay << " ---\n";
     displayStatus();
