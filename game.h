@@ -48,6 +48,7 @@ public:
     void initializeBackroomsLevels();
     void displayBackroomsLevels() const;
     Entity getRandomEntity() const;
+    void addContainedEntity(const Entity& entity);
 };
 
 #endif
